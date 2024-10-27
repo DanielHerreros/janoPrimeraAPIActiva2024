@@ -3,7 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import pool from "../configDb.js";
 import { Router } from "express";
-import { publicPath } from "../configurationData.js";
+import { publicPath } from "../configData.js";
 import { saveUserHandler } from "../handlers/userHandler.js";
  
  

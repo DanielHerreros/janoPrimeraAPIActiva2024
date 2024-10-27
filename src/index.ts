@@ -1,6 +1,6 @@
 import Express from 'express';
 import router from './routes/router.js';
-import { publicPath } from './configurationData.js';
+import { publicPath } from './configData.js';
  
 const app = Express();
 const port = 3000;
