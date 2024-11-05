@@ -11,7 +11,7 @@ router.get('/newUser', (req: Express.Request, res: Express.Response) => {
 });
  
 router.get('/usersManagement', (req: Express.Request, res: Express.Response) => {
-    const targetFilePath = path.join(publicPath, "/userManagement.html");
+    const targetFilePath = path.join(publicPath, "/usersManagement.html");
     res.sendFile(targetFilePath);
 })
 

@@ -1,8 +1,9 @@
 import { findUserById, getUsers, saveNewUser } from "../models/userModel.js";
+import { User } from "../types/user.js";
 
-export async function newUser(data: any):Promise<string>{
+export async function newUser(user: User):Promise<string>{
     try {
-        const result = await saveNewUser(data);
+        const result = await saveNewUser(user);
         return result;
     } catch (error:any){
         if (error.code === "23505") {
